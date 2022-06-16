@@ -6,7 +6,6 @@ body {
     min-height: 100vh;
     background-image: url(../ressources/—Pngtree—trendy\ 80s\ abstract\ geometric\ background_1157556.png);
     
-
 }
 .glitch {
     
@@ -19,11 +18,15 @@ body {
 
 .mesButtons {
     text-align: center;
+    
+    
+
 
 }
 
 .resultat {
-    background-color: bisque;
+    color: blue;
+    
     
 }
 
@@ -37,20 +40,48 @@ img {
     border-radius: 15%;
 }
 
-.buttonX {
+.buttonP {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: red;
+    border-color: black;
+  
 
 }
+.buttonF {
+    border-radius: 15%;
+    margin-left: 15px;
+    padding:0;
+    border-color: black;
 
-.mesLogos {
-    position: relative;
-    right: 50px;
 }
+.buttonC {
+    border-radius: 15%;
+    margin-left: 15px;
+    padding:0;
+    border-color: black;
+    
 
-#feuille {
-    margin-left: 40px;
-    margin-right: 40px;
+}
+.img1{
+    box-shadow: 0 0 60px -10px blue;
+    transition: all .3s;
+}
+.img2{
+    box-shadow: 0 0 60px -10px blue;
+    transition: all .3s;
+}
+.img3{
+    box-shadow: 0 0 60px -10px blue;
+    transition: all .3s;
+    
+}
+.img1:hover {
+    box-shadow: 0 0 60px blue;
+}
+.img2:hover {
+    box-shadow: 0 0 60px blue;
+}
+.img3:hover {
+    box-shadow: 0 0 60px blue;
 }

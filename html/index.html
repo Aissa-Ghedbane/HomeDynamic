@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Pierre Feuille Ciseaux</title>
@@ -15,11 +16,15 @@
     <div class="container">
           
         <div class="mesBouttons">
-            <button class="buttonX"><img src="../ressources/iryf.jpg" height ="80" width="80" /></button>
-            <button class="buttonX"><img src="../ressources/edd.jpg" height ="80" width="80" /></button>
-            <button class="buttonX"><img src="../ressources/zd.jpg" height ="80" width="80" /></button>
-            <button class="glitch">Glitch</button>
+            <button class="buttonP"><img id="img1" class="img1" src="../ressources/iryf.jpg" height ="80" width="80" alt="Pierre" /></button>
+            <button class="buttonF"><img  id="img2" class="img2" src="../ressources/edd.jpg" height ="80" width="80" alt="Feuille"/></button>
+            <button class="buttonC"><img  id="img3" class="img3" src="../ressources/zd.jpg" height ="80" width="80" alt="Ciseaux"/></button>
+            <!-- <button class="glitch">Glitch</button> -->
         </div>
+        
+        
+        
+        
         <div class="resultat"></div>
     <!--    <script>src ="js/test.js" </script>   verifié lien issues  -->
     <script>
@@ -47,22 +52,26 @@
                         //Je déclare une variable 'resultat' sans valeurs
                         let resultat = "";
                         
-                        var Pierre = document.createElement("buttonX");
-                        var Feuille = document.createElement("buttonX");
-                        var Ciseaux = document.createElement("buttonX");
+                        // const Pierre = document.createElement("buttonP");
+                        // const Feuille = document.createElement("buttonF");
+                        // const Ciseaux = document.createElement("buttonC");
+                        var Pierre = document.getElementById("img1");
+                        var Feuille = document.getElementById("img2");
+                        var Ciseaux = document.getElementById("img3");
                         
+
                         // Si joueur est robot on la meme valeur alors le résultat est égal
                         if (joueur == robot) {
-                            resultat = 'Egalité';
+                            resultat = "Egalité";
                         }
                         // Ou si joueur est égale a Pierre et robot a Ciseaux etc.. 
-                        else if (joueur == Pierre && robot == Ciseaux || joueur == Feuille && robot == Pierre || joueur == Ciseaux && robot == Feuille) {
+                        else if ((joueur == Pierre  && robot == Ciseaux )|| (joueur == Feuille && robot == Pierre) || (joueur == Ciseaux && robot == Feuille)) {
                             //Alors le résultat est win
                             resultat = "Gagné";
                         }
-                        else if (joueur == "Glitch" && robot == Ciseaux || joueur == "Glitch" && robot == Pierre ||joueur == "Glitch" && robot == Ciseaux){
-                            resultat = "Gagné avec un Glitch !";
-                        }
+                        // else if (joueur == "Glitch" && robot == Ciseaux || joueur == "Glitch" && robot == Pierre ||joueur == "Glitch" && robot == Ciseaux){
+                        //     resultat = "Gagné avec un Glitch !";
+                        // }
                         //Sinon
                         else {
                             resultat = "Game Over";
