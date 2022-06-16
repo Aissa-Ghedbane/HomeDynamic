@@ -37,10 +37,20 @@ img {
     border-radius: 15%;
 }
 
-/* .buttonX {
+.buttonX {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
     border-color: red;
 
-} */
+}
+
+.mesLogos {
+    position: relative;
+    right: 50px;
+}
+
+#feuille {
+    margin-left: 40px;
+    margin-right: 40px;
+}

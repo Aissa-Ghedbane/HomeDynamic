@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -14,11 +13,12 @@
 
 <body>
     <div class="container">
+          
         <div class="mesBouttons">
-            <button style="padding:0;border-radius: 15%;border-color: red;"><img src ="../ressources/iryf.jpg" height="116" width="116"/></button>
-            <button style="margin-left: 15px;padding:0;border-radius: 15%;border-color: red;"><img src ="../ressources/edd.jpg" height="116" width="116"/></button> 
-            <button style="margin-left: 15px;padding:0;border-radius: 15%;border-color: red;"><img src ="../ressources/zd.jpg" height="116" width="116"/></button>
-            <button class="glitch" style="padding:0;">Glitch</button>
+            <button class="buttonX"><img src="../ressources/iryf.jpg" height ="80" width="80" /></button>
+            <button class="buttonX"><img src="../ressources/edd.jpg" height ="80" width="80" /></button>
+            <button class="buttonX"><img src="../ressources/zd.jpg" height ="80" width="80" /></button>
+            <button class="glitch">Glitch</button>
         </div>
         <div class="resultat"></div>
     <!--    <script>src ="js/test.js" </script>   verifié lien issues  -->
@@ -38,22 +38,29 @@
                         const joueur = buttons[i].innerHTML;
                         // j'affiche le choix du joueur dans la console quand il clique sur un boutton
                         //console.log(joueur);
+                        
+
                         //Robo est égal a une case choisi aléatoirement entre l'index 0 et 2 dans le tableau, grace a Math.floor(Ma), innerHTML affiche la chaine de caractère choisi dans buttons[i]
                         const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
                         // j'affiche le choix du robot dans la console quand il clique sur un boutton
                         //console.log(robot);
                         //Je déclare une variable 'resultat' sans valeurs
                         let resultat = "";
+                        
+                        var Pierre = document.createElement("buttonX");
+                        var Feuille = document.createElement("buttonX");
+                        var Ciseaux = document.createElement("buttonX");
+                        
                         // Si joueur est robot on la meme valeur alors le résultat est égal
-                        if (joueur === robot) {
+                        if (joueur == robot) {
                             resultat = 'Egalité';
                         }
                         // Ou si joueur est égale a Pierre et robot a Ciseaux etc.. 
-                        else if (joueur === "Pierre" && robot === "Ciseaux" || joueur === "Feuille" && robot === "Pierre" || joueur === "Ciseaux" && robot === "Feuille") {
+                        else if (joueur == Pierre && robot == Ciseaux || joueur == Feuille && robot == Pierre || joueur == Ciseaux && robot == Feuille) {
                             //Alors le résultat est win
-                            resultat = "Win";
+                            resultat = "Gagné";
                         }
-                        else if (joueur === "Glitch" && robot === "Ciseaux" || joueur === "Glitch" && robot === "Pierre" || joueur === "Glitch" && robot === "Feuille"){
+                        else if (joueur == "Glitch" && robot == Ciseaux || joueur == "Glitch" && robot == Pierre ||joueur == "Glitch" && robot == Ciseaux){
                             resultat = "Gagné avec un Glitch !";
                         }
                         //Sinon
