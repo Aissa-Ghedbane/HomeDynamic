@@ -1,7 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    min-height: 100vh;
+    background-image: url(../ressources/—Pngtree—trendy\ 80s\ abstract\ geometric\ background_1157556.png);
+    
+
+}
 .glitch {
     
     color:transparent;
     background-color: transparent;
     border:none;
     outline:none;
+    
 }
+
+.mesButtons {
+    text-align: center;
+
+}
+
+.resultat {
+    background-color: bisque;
+    
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 400px ;
+}
+
