@@ -33,3 +33,14 @@ body {
     top: 400px ;
 }
 
+img {
+    border-radius: 15%;
+}
+
+/* .buttonX {
+    border-radius: 15%;
+    margin-left: 15px;
+    padding:0;
+    border-color: red;
+
+} */
