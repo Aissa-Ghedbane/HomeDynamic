@@ -5,132 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/styleHTML.css">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-
-        <script src ="https://kit.fontawesome.com/0c87a70838.js"></script>
-    <title>Pierre Feuille Ciseaux</title>
+    <title>Navbar</title>
 </head>
 
-<body style ="font-family:monospace;">
-    <div class="titleGame">
-        <h2 style="font-size: revert;">&nbsp;&nbsp;<span id ="spanH2">Mini-jeux en JavaScript</span></h2>
-        <h1 style="font-size: revert;"><span id="P">Pierre</span>/<span id="F">Feuille</span>/<span id="C">Ciseau</span></h1>
-        
-
-    </div>
-    <div class="card" style="background: rgba(255, 255, 255, 0.1); border-top: 1px solid rgb(125, 125, 125);
-    border-left: 1px solid rgb(125, 125, 125);">
-        <div class="content">
-            <div class="picture">
-                <img src="../ressources/visuel-logo-discord.png">
-            </div>
-        </div>
-        <h1 style="padding-left: 70px;padding-top: 10px;">Dev Training</h1>
-        <p style="padding-bottom: 10px;padding-left: 20px;padding-right: 20px; text-align: center;padding-top: 10px;">Dev Training est le serveur Discord sur lequel je révise des stacks, partage mes projets etc..   </p>
-        <a href="https://github.com/Aissa-Ghedbane" target="_blank" style="border-top: 1px solid rgb(125, 125, 125);
-        border-left: 1px solid rgb(125, 125, 125);
-        transition: all .3s;box-shadow: 0 2px 16px 3px #dc281e;margin-bottom: -25px;margin-left: 70px;text-align: center;padding-left: 8px;padding-top: 8px;color: white;text-decoration: none;text-transform: uppercase;font-size: 26px;;background: linear-gradient(to top,#f00000, #dc281e);border-radius: 8px;font-weight:500 ;margin-right: 70px;padding-bottom: 17px;;padding-bottom: 8px;">Rejoins-moi <i class="fas fa-caret-right" aria-hidden="true"></i></a>
-    </div>
-    <div class="container">
-          
-        <div class="mesBouttons" style="padding-right: 15px;">
-            <button class="buttonP"><img id="img1" class="img1" src="../ressources/iryf.jpg" height ="80" width="80" alt="Pierre" /></button>
-            <button class="buttonF"><img  id="img2" class="img2" src="../ressources/edd.jpg" height ="80" width="80" alt="Feuille"/></button>
-            <button class="buttonC"><img  id="img3" class="img3" src="../ressources/zd.jpg" height ="80" width="80" alt="Ciseaux"/></button>
-            <!-- <button class="glitch">Glitch</button> -->
-        </div>
-        
-        
-        
-        
-        <div class="resultat" style="display: flex;justify-content: center;align-items: self-end;padding-top: 49px;padding-left: 520px;position: absolute;">
-           
-            
-        
-        
-        
-        
-        
-        </div>
-
-    <!-- <script>
-    $('.img1').tilt({speed: 1000, scale: 1.1});
-    $('.img2').tilt({speed: 1000, scale: 1.1});
-    $('.img').tilt({speed: 1000, scale: 1.1});
+<body>
     
-    $('.buttonP').tilt({speed: 1000, scale: 1.1});
-    $('.buttonF').tilt({speed: 1000, scale: 1.1});
-    $('.buttonC').tilt({speed: 1000, scale: 1.1});
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="../html/Github&Game.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="../ressources/images.png" alt="Menu" class ="menuHamburger">
+    </nav>
+    <header>
 
-    </script> -->
-    
-
-    <script>
-        //Je crée mon module 'jeux'
-        const jeux = {
-            //Je déclare une méthode 'init'
-            init: function () {
-                // Je crée une constante 'buttons' puis je séléctionne tout les 'button' avec un querySelectorAll 
-                const buttons = document.querySelectorAll("button");
-                //Création d'une boucle for  
-                // variable 'i' est égale a 0 , tant que i est infèrieur à tout mes buttons j'avance de 1 sur mon tableau
-                for (let i = 0; i < buttons.length; i++) {
-                    // J'ajoute l'écouteur d'événement "click" sur chaque button et je décris ce que je fais avec dans 'function'
-                    buttons[i].addEventListener("click", function () {
-                        //Joueur est égal a la case qu'il aura coché, innerHTML affiche la chaine de caractère choisi dans buttons[i]
-                        const joueur = buttons[i].innerHTML;
-                        // j'affiche le choix du joueur dans la console quand il clique sur un boutton
-                        //console.log(joueur);
-                        
-
-                        //Robo est égal a une case choisi aléatoirement entre l'index 0 et 2 dans le tableau, grace a Math.floor(Ma), innerHTML affiche la chaine de caractère choisi dans buttons[i]
-                        const robot = buttons[Math.floor(Math.random() * buttons.length)].innerHTML;
-                        // j'affiche le choix du robot dans la console quand il clique sur un boutton
-                        //console.log(robot);
-                        //Je déclare une variable 'resultat' sans valeurs
-                        let resultat = "";
-                        
-                        //  const Pierre = document.createElement("buttonP");
-                        //  const Feuille = document.createElement("buttonF");
-                        //  const Ciseaux = document.createElement("buttonC");
-                        var Pierre = document.getElementById("img1");
-                        var Feuille = document.getElementById("img2");
-                        var Ciseaux = document.getElementById("img3");
-                        
-                        // Si joueur est robot on la meme valeur alors le résultat est égal
-                        if (joueur == robot) {
-                            resultat = "=EGAL=";
-                        }
-                        // Ou si joueur est égale a Pierre et robot a Ciseaux etc.. 
-                        else if ((joueur == Pierre  && robot == Ciseaux )|| (joueur == Feuille && robot == Pierre) || (joueur == Ciseaux && robot == Feuille)) {
-                            //Alors le résultat est win
-                            resultat = "GG!!";
-                        }
-                        // else if (joueur == "Glitch" && robot == Ciseaux || joueur == "Glitch" && robot == Pierre ||joueur == "Glitch" && robot == Ciseaux){
-                        //     resultat = "Gagné avec un Glitch !";
-                        // }
-                        //Sinon
-                        else {
-                            resultat = "GAME OVER";
-                        }
-                        //ici je séléction la classe de ma div pour lui attribué les valeurs ci dessous
-                        document.querySelector(".resultat").innerHTML = `
-                        ${joueur} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        ${robot} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        ${resultat}
-                        `;
-                        //console.log(`Joueur : ${joueur} \nVS \nRobot : ${robot}`);
-                    });
-                }
-            },
-        }
-        // ICI On pose un écouteur d'événements qui éxécute la méthode 'init' du module 'jeux' une fois la page chargé
-        document.addEventListener('DOMContentLoaded', jeux.init);
-    </script>
-    </div>
+   </header>
 </body>
+<script>
+    const menuHamburger = document.querySelector(".menuHamburger")
+    const navLinks = document.querySelector(".nav-links")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
 
 </html>
