@@ -1,10 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    user-select: none;
+}
+
 body {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box; */
-    user-select: none;
-    min-height: 100vh;
+    min-height: 100vh; 
     background-image: url(../ressources/—Pngtree—trendy\ 80s\ abstract\ geometric\ background_1157556.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
     
 }
 .glitch {
@@ -18,6 +30,8 @@ body {
 
 .mesButtons {
     text-align: center;
+
+   
     
     
 
@@ -25,15 +39,16 @@ body {
 }
 
 .resultat {
-    color: #CD106E;
+    color: white;
+    font-weight: 900;
     
     
 }
 
 .container {
     text-align: center;
-    position: relative;
-    top: 400px ;
+    position: absolute;
+    top: 650px ;
 }
 
 img {
@@ -86,4 +101,38 @@ img {
 }
 .img3:hover {
     box-shadow: 0 0 60px blue;
+}
+
+.card {
+    height: 600px;
+    width: 400px; 
+    position: relative;
+    bottom: 200px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    color: white;
+   
+  
+}
+.card .content .picture {
+    width: 280px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.card .content .picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15%;
+    border-top: 1px solid rgb(125, 125, 125);
+    border-left: 1px solid rgb(125, 125, 125);
+    
+
+}
+
+.card .content .picture::before {
+    position:absolute;
 }
