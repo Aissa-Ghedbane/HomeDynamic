@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
+    
     
 }
 .glitch {
@@ -59,7 +61,7 @@ img {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: black;
+    border-color: red;
   
 
 }
@@ -67,14 +69,14 @@ img {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: black;
+    border-color: red;
 
 }
 .buttonC {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: black;
+    border-color: red;
   
     
 
@@ -136,3 +138,9 @@ img {
 .card .content .picture::before {
     position:absolute;
 }
+
+.fa-caret-right:before {
+    margin-left: 8px;
+    content: "\f0da";
+}
+
