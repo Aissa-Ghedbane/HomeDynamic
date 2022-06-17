@@ -40,7 +40,15 @@
         
         
         
-        <div class="resultat"></div>
+        <div class="resultat" style="display: flex;justify-content: center;align-items: self-end;padding-top: 49px;padding-left: 520px;position: absolute;">
+           
+            
+        
+        
+        
+        
+        
+        </div>
 
     <!-- <script>
     $('.img1').tilt({speed: 1000, scale: 1.1});
@@ -89,24 +97,24 @@
 
                         // Si joueur est robot on la meme valeur alors le résultat est égal
                         if (joueur == robot) {
-                            resultat = "Egalité";
+                            resultat = "=EGAL=";
                         }
                         // Ou si joueur est égale a Pierre et robot a Ciseaux etc.. 
                         else if ((joueur == Pierre  && robot == Ciseaux )|| (joueur == Feuille && robot == Pierre) || (joueur == Ciseaux && robot == Feuille)) {
                             //Alors le résultat est win
-                            resultat = "Gagné";
+                            resultat = "GG!!";
                         }
                         // else if (joueur == "Glitch" && robot == Ciseaux || joueur == "Glitch" && robot == Pierre ||joueur == "Glitch" && robot == Ciseaux){
                         //     resultat = "Gagné avec un Glitch !";
                         // }
                         //Sinon
                         else {
-                            resultat = "Game Over";
+                            resultat = "GAME OVER";
                         }
                         //ici je séléction la classe de ma div pour lui attribué les valeurs ci dessous
                         document.querySelector(".resultat").innerHTML = `
-                        Joueur : ${joueur} </br>
-                        Robot : ${robot} </br>
+                        ${joueur} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ${robot} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         ${resultat}
                         `;
                         //console.log(`Joueur : ${joueur} \nVS \nRobot : ${robot}`);

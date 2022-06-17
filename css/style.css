@@ -32,6 +32,7 @@ body {
 
 .mesButtons {
     text-align: center;
+ 
 
    
     
@@ -43,6 +44,9 @@ body {
 .resultat {
     color: white;
     font-weight: 900;
+    font-size: 2em;
+    
+
     
     
 }
@@ -143,4 +147,3 @@ img {
     margin-left: 8px;
     content: "\f0da";
 }
-
