@@ -65,7 +65,7 @@ img {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: red;
+    border-color: black;
   
 
 }
@@ -73,40 +73,41 @@ img {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: red;
+    border-color: black;
 
 }
 .buttonC {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
-    border-color: red;
+    border-color: black;
   
     
 
 }
 .img1{
-    box-shadow: 0 0 60px -10px blue;
+    box-shadow: 0 0 60px -10px blueviolet;    
     transition: all .3s;
 }
 .img2{
-    box-shadow: 0 0 60px -10px blue;
+    box-shadow: 0 0 60px -10px blueviolet;
     transition: all .3s;
 }
 .img3{
-    box-shadow: 0 0 60px -10px blue;
+    box-shadow: 0 0 60px -10px blueviolet;
     transition: all .3s;
     
     
 }
 .img1:hover {
-    box-shadow: 0 0 60px blue;
+    box-shadow: 0 0 60px black;
+    
 }
 .img2:hover {
-    box-shadow: 0 0 60px blue;
+    box-shadow: 0 0 60px red;
 }
 .img3:hover {
-    box-shadow: 0 0 60px blue;
+    box-shadow: 0 0 60px greenyellow;
 }
 
 .card {
@@ -147,3 +148,4 @@ img {
     margin-left: 8px;
     content: "\f0da";
 }
+
