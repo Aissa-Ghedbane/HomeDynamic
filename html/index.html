@@ -7,35 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/styleHome.css">
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
-    <title>Navbar</title>
+    <title>Portfolio</title>
 </head>
 
 <body>
-    
     <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
         <div class="nav-links">
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
+            <ul style="text-transform: uppercase;">
+                <li class="active"><a href="#">Acceuil</a></li>
                 <li><a href="#">Compétences</a></li>
                 <li><a href="#">Projets</a></li>
                 <li><a href="#">CV</a></li>
-                <li><a href="../html/Github&Game.html">Contact</a></li>
+                <li><a href="../html/Jeux.html">Contact</a></li>
             </ul>
         </div>
         <img src="../ressources/images.png" alt="Menu" class ="menuHamburger">
     </nav>
     <header>
-
    </header>
+   
+   <script src="../js/apps.js"></script>
 </body>
-<script>
-    const menuHamburger = document.querySelector(".menuHamburger")
-    const navLinks = document.querySelector(".nav-links")
-
-    menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.toggle('mobile-menu')
-    })
-</script>
 
 </html>

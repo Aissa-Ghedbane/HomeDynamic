@@ -39,9 +39,9 @@ header {
 .navbar .menuHamburger {
     display: none;
     position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 35px;
+    top: 85px;
+    right: 1750px;
+    width: 60px;
     border-radius: 50%;
 }
 
