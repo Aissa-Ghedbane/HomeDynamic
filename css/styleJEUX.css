@@ -5,7 +5,6 @@
     user-select: none;
     font-family: monospace
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -16,73 +15,47 @@ body {
     justify-content: center;
     background-size: cover;
     background-position: center;
-    position: relative;
-    
-    
+    position: relative;  
 }
 .glitch {
-    
     color:transparent;
     background-color: transparent;
     border:none;
-    outline:none;
-    
+    outline:none;  
 }
-
 .mesButtons {
     text-align: center;
- 
-
-   
-    
-    
-
-
 }
-
 .resultat {
     color: white;
     font-weight: 900;
     font-size: 2em;
-    
-
-    
-    
 }
-
 .container {
     text-align: center;
     position: absolute;
     top: 650px ;
 }
-
 img {
     border-radius: 15%;
 }
-
 .buttonP {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
     border-color: black;
-  
-
 }
 .buttonF {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
     border-color: black;
-
 }
 .buttonC {
     border-radius: 15%;
     margin-left: 15px;
     padding:0;
     border-color: black;
-  
-    
-
 }
 .img1{
     box-shadow: 0 0 60px -10px blueviolet;    
@@ -94,13 +67,10 @@ img {
 }
 .img3{
     box-shadow: 0 0 60px -10px blueviolet;
-    transition: all .3s;
-    
-    
+    transition: all .3s;   
 }
 .img1:hover {
-    box-shadow: 0 0 60px black;
-    
+    box-shadow: 0 0 60px black;   
 }
 .img2:hover {
     box-shadow: 0 0 60px red;
@@ -108,7 +78,6 @@ img {
 .img3:hover {
     box-shadow: 0 0 60px greenyellow;
 }
-
 .card {
     height: 600px;
     width: 400px; 
@@ -119,15 +88,12 @@ img {
     backdrop-filter: blur(1px);
     border-radius: 20px;
     color: white;
-   
-  
 }
 .card .content .picture {
     width: 280px;
     height: 200px;
     margin: 0 auto;
     position: relative;
-
 }
 .card .content .picture img {
     width: 100%;
@@ -135,14 +101,10 @@ img {
     border-radius: 15%;
     border-top: 1px solid rgb(125, 125, 125);
     border-left: 1px solid rgb(125, 125, 125);
-    
-
 }
-
 .card .content .picture::before {
     position:absolute;
 }
-
 .fa-caret-right:before {
     margin-left: 8px;
     content: "\f0da";
@@ -159,13 +121,10 @@ img {
     backdrop-filter: blur(1px);
     padding-right: 15px;
     color: white;
-
 }
-
 #P {
     color: black;
     font-weight: 900;
-
 }
 #F {
     color: red;
@@ -175,8 +134,11 @@ img {
     color: greenyellow;
     font-weight: 900;
 }
-
 #spanH2 {
     font-size: 0.8em;
     padding-left: 35px;
 } 
+
+@media screen and (max-width: 2000px) {
+
+}
