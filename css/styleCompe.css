@@ -4,7 +4,7 @@
     list-style: none;
     text-decoration: none;
 }
-header {
+body {
     background-image: url(../ressources/—Pngtree—trendy\ 80s\ abstract\ geometric\ background_1157556.png);
     height: 100vh;
     width: 100vw;
@@ -20,7 +20,7 @@ header {
     box-sizing: border-box;
 }
 .navbar a {
-    color: white;
+    color: black;
 }
 .navbar .logo {
     font-size: 2em;
@@ -31,6 +31,12 @@ header {
 }
 .navbar .nav-links ul li {
     margin: 0 25px;
+}
+.navbar .nav-links ul li a {
+    transition: all .3s;   
+}
+.navbar .nav-links ul li a:hover {
+    box-shadow: 0 0 45px red; 
 }
 .navbar .nav-links ul li.active a {
     color: #ed3c57;
@@ -43,7 +49,15 @@ header {
     right: 1750px;
     width: 60px;
     border-radius: 50%;
+    box-shadow: 0 0 50px 1px white;
+    transition: all .3s;   
 }
+
+.navbar .menuHamburger:hover {
+    box-shadow: 0 0 50px red;   
+
+}
+  
 
 @media screen and (max-width: 4000px) { /*désactivé 4000px*/
     .navbar{
