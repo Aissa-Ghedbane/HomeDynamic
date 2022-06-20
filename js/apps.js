@@ -11,6 +11,7 @@
             //Création d'une boucle for  
             // variable 'i' est égale a 0 , tant que i est infèrieur à tout mes buttons j'avance de 1 sur mon tableau
             for (let i = 0; i < buttons.length; i++) {
+                
                 // J'ajoute l'écouteur d'événement "click" sur chaque button et je décris ce que je fais avec dans 'function'
                 buttons[i].addEventListener("click", function () {
                 
@@ -31,6 +32,7 @@
                     //  const Pierre = document.createElement("buttonP");
                     //  const Feuille = document.createElement("buttonF");
                     //  const Ciseaux = document.createElement("buttonC");
+                    // ou
                     var Pierre = document.getElementById("img1");
                     var Feuille = document.getElementById("img2");
                     var Ciseaux = document.getElementById("img3");
@@ -70,7 +72,7 @@
     
     
     
-    
+    // Menu hamburger
     const hamburger = {
             
             init: function() {
@@ -78,9 +80,18 @@
         const menuHamburger = document.querySelector(".menuHamburger")
         const navLinks = document.querySelector(".nav-links")
     
-        menuHamburger.addEventListener('click',()=>{
+        menuHamburger.addEventListener('mouseenter',()=>{
         navLinks.classList.toggle('mobile-menu')
         })
         }
         }
         document.addEventListener('DOMContentLoaded', hamburger.init);
+
+
+
+// chargement acceuil
+        const loader = document.querySelector('.loader');
+
+    window.addEventListener('load', () => {
+    loader.classList.add('fondu-out');
+})
