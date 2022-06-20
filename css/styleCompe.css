@@ -28,6 +28,13 @@ body {
 }
 .navbar .nav-links ul {
     display: flex;
+    font-family: monospace;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgb(125, 125, 125);
+    border-left: 1px solid rgb(125, 125, 125);
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
 }
 .navbar .nav-links ul li {
     margin: 0 25px;
@@ -58,6 +65,31 @@ body {
 
 }
   
+.image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+
+
+.image:hover img {
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 4000px) { /*désactivé 4000px*/
     .navbar{
