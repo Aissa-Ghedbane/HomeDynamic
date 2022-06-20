@@ -36,11 +36,11 @@
                     var Ciseaux = document.getElementById("img3");
                     
                     // Si joueur est robot on la meme valeur alors le résultat est égal
-                    if (joueur == robot) {
+                    if (joueur === robot) {
                         resultat = "=EGAL=";
                     }
                     // Ou si joueur est égale a Pierre et robot a Ciseaux etc.. 
-                    else if ((joueur == Pierre  && robot == Ciseaux )|| (joueur == Feuille && robot == Pierre) || (joueur == Ciseaux && robot == Feuille)) {
+                    else if ((joueur === Pierre  && robot === Ciseaux )|| (joueur === Feuille && robot === Pierre) || (joueur === Ciseaux && robot === Feuille)) {
                         //Alors le résultat est win
                         resultat = "GG!!";
                     }

@@ -42,11 +42,15 @@ body {
 .navbar .nav-links ul li {
     margin: 0 25px;
 }
+
 .navbar .nav-links ul li a {
-    transition: all .3s;   
+    transition: all .3s;  
+  
 }
 .navbar .nav-links ul li a:hover {
     box-shadow: 0 0 45px red; 
+     
+  
 }
 .navbar .nav-links ul li.active a {
     color: #ed3c57;
@@ -62,6 +66,7 @@ body {
     box-shadow: 0 0 50px 1px white;
     transition: all .3s;   
 }
+
 
 .navbar .menuHamburger:hover {
     box-shadow: 0 0 50px red;   
